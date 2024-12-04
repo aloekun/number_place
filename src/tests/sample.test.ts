@@ -1,3 +1,5 @@
+import { Sample } from "../sample";
+
 test("CIの動作確認", () => {
     const num1: number = 1;
     const num2: number = 2;
