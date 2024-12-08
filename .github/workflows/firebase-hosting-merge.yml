@@ -8,7 +8,11 @@ on:
         branches:
             - main
 jobs:
-    build_and_deploy:
+    unit-test:
+        uses: ./.github/workflows/reusable_workflow_ci.yml
+
+    deploy:
+        needs: unit-test
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
