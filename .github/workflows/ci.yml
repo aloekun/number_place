@@ -5,7 +5,4 @@ on:
         branches: [main]
 jobs:
     unit-test:
-        runs-on: ubuntu-latest
-
-        steps:
-            - uses: ./.github/workflows/reusable_workflow_ci.yml
+        uses: ./.github/workflows/reusable_workflow_ci.yml
