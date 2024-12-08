@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload. Deploy test with changed GitHub Actions permission.
+          Edit <code>src/App.tsx</code> and save to reload. Deploy with unittest.
         </p>
         <a
           className="App-link"
