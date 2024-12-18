@@ -12,7 +12,7 @@ export class NumberBoard {
 
     // 盤面から指定した行の数列を取得
     // TODO: 盤面から指定した行・列・ボックス(3*3)の数列を取得するように更新
-    public getNumberSet(targetSetNum: number): number[] {
+    public getNumberSet(targetSetNum: number): number[] | undefined {
         const resultSet = [];
         // 行の取得
         // 連続する数字を取得
@@ -31,7 +31,7 @@ export class NumberBoard {
                 checkNumber = this.board.at((lineIndex - 1) * 9 + rowIndex);
                 // 範囲外の場合は、0の配列を返す
                 if (checkNumber === undefined) {
-                    return [0, 0, 0, 0, 0, 0, 0, 0, 0];
+                    return undefined;
                 }
                 pushNumber = checkNumber;
                 resultSet.push(pushNumber);
